@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTU_Design - Handmade Crochet & Embroidery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e9;
+            color: #3b3a30;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/f7f3e9/3b3a30?text=UTU_Design+Crochet');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #e0ac93;
+            color: #3b3a30;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #c9937a;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">UTU_Design</a>
+            <div class="flex items-center space-x-6 text-gray-600 font-semibold">
+                <a href="#products" class="hover:text-gray-900 transition-colors">Products</a>
+                <a href="#about" class="hover:text-gray-900 transition-colors">About Us</a>
+                <a href="#mission" class="hover:text-gray-900 transition-colors">Our Mission</a>
+                <a href="#" class="btn-primary py-2 px-4 rounded-full font-bold">Shop Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[600px] flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-40 p-12 rounded-xl backdrop-blur-sm mx-4 md:mx-0">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Handmade with Heart</h1>
+            <p class="text-lg md:text-2xl font-medium drop-shadow-md">Beautiful crochet bags and accessories, crafted just for you.</p>
+            <a href="#products" class="mt-8 inline-block btn-primary py-3 px-8 rounded-full font-bold text-lg hover:shadow-lg transition-all">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden p-6 text-center">
+                    <img src="https://placehold.co/600x600/e0ac93/ffffff?text=Chunky+Crochet+Bag" alt="Chunky crochet bag" class="w-full h-72 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Chunky Yarn Bag</h3>
+                    <p class="text-gray-600 mb-4">A soft and stylish bag for everyday use.</p>
+                    <a href="#" class="btn-primary py-2 px-6 rounded-full font-semibold">View Details</a>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden p-6 text-center">
+                    <img src="https://placehold.co/600x600/8d99ae/ffffff?text=Sweater+Embroidery" alt="Sweater with embroidery" class="w-full h-72 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Sweater Embroidery</h3>
+                    <p class="text-gray-600 mb-4">Unique, hand-embroidered designs on cozy sweaters.</p>
+                    <a href="#" class="btn-primary py-2 px-6 rounded-full font-semibold">View Details</a>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card bg-white rounded-xl overflow-hidden p-6 text-center">
+                    <img src="https://placehold.co/600x600/a8c6a8/ffffff?text=Handmade+Name+Tags" alt="Handmade name tags" class="w-full h-72 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-2">Handmade Name Tags</h3>
+                    <p class="text-gray-600 mb-4">Personalized tags for your bags or other items.</p>
+                    <a href="#" class="btn-primary py-2 px-6 rounded-full font-semibold">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-[#f7f3e9]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">About UTU_Design</h2>
+            <div class="max-w-3xl mx-auto text-center text-lg space-y-4">
+                <p>Welcome to UTU_Design, where every stitch tells a story of passion and purpose. We are a small, family-run business dedicated to creating beautiful, handmade crochet bags, sweaters with delicate embroidery, and personalized accessories. Each piece is crafted with care and a deep commitment to quality.</p>
+                <p>Our journey began from a love for the art of crochet and a desire to make a positive impact. We believe that true beauty comes from both what we create and how we give back to our community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-16 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/800x600/e0ac93/ffffff?text=Our+Mission" alt="Our mission" class="rounded-xl w-full">
+            </div>
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-4xl font-bold">Our Mission: Crafting for a Cause</h2>
+                <p class="text-lg">At UTU_Design, our mission is to make a tangible difference in the lives of the young generation. We are proud to announce that a portion of all sales from our products will be donated to <a href="http://www.ministry412.com" target="_blank" class="text-[#e0ac93] font-semibold underline hover:text-[#c9937a] transition-colors">www.ministry412.com</a>, an organization dedicated to supporting and helping young people.</p>
+                <p class="text-lg">By purchasing one of our handmade items, you are not only getting a unique and beautiful product, but you are also contributing to a greater purpose, helping to empower and uplift the next generation. Thank you for being a part of our mission.</p>
+                <a href="http://www.ministry412.com" target="_blank" class="inline-block btn-primary py-3 px-8 rounded-full font-bold hover:shadow-lg transition-all">Learn More About the Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold mb-2">UTU_Design</h3>
+                <p class="text-gray-400">Handmade with love, sold with purpose.</p>
+            </div>
+            <div class="flex justify-center space-x-6 text-gray-400 mb-6">
+                <a href="#products" class="hover:text-white transition-colors">Products</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#mission" class="hover:text-white transition-colors">Mission</a>
+                <a href="#" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2024 UTU_Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
